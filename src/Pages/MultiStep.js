@@ -27,21 +27,37 @@ export default function MultiStep() {
           <div className="flex items-center justify-between mt-8 max-[330px]:flex-col max-[330px]:justify-center max-[330px]:items-start max-[330px]:gap-3">
             {/* 1st step */}
             <div className="flex items-center gap-3">
-              <p className={`px-4 py-[0.4rem] text-white text-[1.1rem] font-bold w-fit rounded-md ${activeStep === 1 ? 'bg-[#6163f1]' : 'bg-black'} max-[443px]:px-3 max-[443px]:py-[0.2rem]`}>
+              <p
+                className={`px-4 py-[0.4rem] text-white text-[1.1rem] font-bold w-fit rounded-md ${
+                  activeStep === 1 ? "bg-[#6163f1]" : "bg-black"
+                } max-[443px]:px-3 max-[443px]:py-[0.2rem]`}
+              >
                 1
               </p>
-              <p className="text-[1.4rem] text-black font-bold max-[443px]:text-[1.2rem]">Connect</p>
+              <p className="text-[1.4rem] text-black font-bold max-[443px]:text-[1.2rem]">
+                Connect
+              </p>
             </div>
             {/* 2nd step */}
             <div className="flex items-center gap-3">
-              <p className={`px-4 py-[0.4rem] text-white text-[1.1rem] font-bold w-fit rounded-md ${activeStep === 2 ? 'bg-[#6163f1]' : 'bg-black'} max-[443px]:px-3 max-[443px]:py-[0.2rem]`}>
+              <p
+                className={`px-4 py-[0.4rem] text-white text-[1.1rem] font-bold w-fit rounded-md ${
+                  activeStep === 2 ? "bg-[#6163f1]" : "bg-black"
+                } max-[443px]:px-3 max-[443px]:py-[0.2rem]`}
+              >
                 2
               </p>
-              <p className="text-[1.4rem] text-black font-bold max-[443px]:text-[1.2rem]">Apply</p>
+              <p className="text-[1.4rem] text-black font-bold max-[443px]:text-[1.2rem]">
+                Apply
+              </p>
             </div>
             {/* 3rd step */}
             <div className="flex items-center gap-3">
-              <p className={`px-4 py-[0.4rem] text-white text-[1.1rem] font-bold w-fit rounded-md ${activeStep === 3 ? 'bg-[#6163f1]' : 'bg-black'} max-[443px]:px-3 max-[443px]:py-[0.2rem]`}>
+              <p
+                className={`px-4 py-[0.4rem] text-white text-[1.1rem] font-bold w-fit rounded-md ${
+                  activeStep === 3 ? "bg-[#6163f1]" : "bg-black"
+                } max-[443px]:px-3 max-[443px]:py-[0.2rem]`}
+              >
                 3
               </p>
               <p className="text-[1.4rem] text-black font-bold  max-[443px]:text-[1.2rem]">
@@ -83,7 +99,11 @@ export default function MultiStep() {
                   </li>
                 </ul>
                 <div className="flex items-center justify-center">
-                  <img onClick={() => setModalOpen(true)} className="w-[60%] max-[600px]:w-full" src={VideoImg} />
+                  <img
+                    onClick={() => setModalOpen(true)}
+                    className="w-[60%] max-[600px]:w-full"
+                    src={VideoImg}
+                  />
                 </div>
                 <div className="flex flex-col items-center justify-center gap-4 mt-14">
                   <button
@@ -152,8 +172,17 @@ export default function MultiStep() {
                   </div>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-4 mt-14">
-                  <button onClick={handleNextStep} className="w-[60%] py-3 text-white bg-[#6163f1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full">
+                  <button
+                    onClick={handleNextStep}
+                    className="w-[60%] py-3 text-white bg-[#6163f1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
+                  >
                     Next Step
+                  </button>
+                  <button
+                    onClick={() => setActiveStep(0)}
+                    className="w-[60%] py-3 text-[#6163f1] border-2 border-[#6163f1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
+                  >
+                    Start Over
                   </button>
                   <p className="text-[1.1rem] text-black font-medium">
                     Three steps that take less than a minute
@@ -201,8 +230,17 @@ export default function MultiStep() {
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center gap-4 mt-14">
-                  <button onClick={handleNextStep} className="w-[60%] py-3 text-white bg-[#6163f1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full">
+                  <button
+                    onClick={handleNextStep}
+                    className="w-[60%] py-3 text-white bg-[#6163f1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
+                  >
                     Next Step
+                  </button>
+                  <button
+                    onClick={() => setActiveStep(0)}
+                    className="w-[60%] py-3 text-[#6163f1] border-2 border-[#6163f1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
+                  >
+                    Start Over
                   </button>
                   <p className="text-[1.1rem] text-black font-medium">
                     Three steps that take less than a minute
@@ -286,12 +324,20 @@ export default function MultiStep() {
                     placeholder="Enter Here"
                   />
                 </div>
-                <div className="flex items-center gap-14 max-[450px]:flex-col max-[450px]:gap-5">
-                  <button className="w-full py-3 text-white bg-[#6163f1] font-bold rounded-2xl text-[1.2rem]">
-                    Save & Enter Contest
-                  </button>
-                  <button className="w-full py-3 text-[#6163f1] border-[#6163f1] font-bold rounded-2xl text-[1.2rem] border-2">
-                    Save & Skip Contest
+                <div className="flex flex-col gap-3">
+                  <div className="flex items-center gap-14 max-[450px]:flex-col max-[450px]:gap-5">
+                    <button className="w-full py-3 text-white bg-[#6163f1] font-bold rounded-2xl text-[1.2rem]">
+                      Save & Enter Contest
+                    </button>
+                    <button className="w-full py-3 text-[#6163f1] border-[#6163f1] font-bold rounded-2xl text-[1.2rem] border-2">
+                      Save & Skip Contest
+                    </button>
+                  </div>
+                  <button
+                    onClick={() => setActiveStep(0)}
+                    className="w-full py-3 text-[#6163f1] border-2 border-[#6163f1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
+                  >
+                    Start Over
                   </button>
                 </div>
               </div>
