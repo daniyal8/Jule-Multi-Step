@@ -32,7 +32,7 @@ const Modal = ({ isOpen, onClose }) => {
     >
       <div className="fixed inset-0 bg-black opacity-50"></div>
       <div
-        className="w-[50%] h-[60vh] absolute bg-white rounded-lg max-[1603px]:w-[70%] max-[1300px]:h-[65vh] max-[1400px]:h-[65vh] max-[986px]:w-[80%] max-[986px]:h-[50vh] max-[829px]:h-[40vh] max-[600px]:w-[90%] max-[521px]:h-[30vh]"
+        className="w-[50%] h-[75vh] absolute bg-white rounded-lg max-[1603px]:w-[70%] max-[1300px]:h-[65vh] max-[1400px]:h-[65vh] max-[986px]:w-[80%] max-[986px]:h-[50vh] max-[829px]:h-[40vh] max-[600px]:w-[90%] max-[521px]:h-[30vh]"
         ref={modalRef}
       >
         <iframe
