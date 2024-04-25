@@ -178,15 +178,15 @@ export default function MultiStep() {
                   >
                     Next Step
                   </button>
-                  <button
-                    onClick={() => setActiveStep(0)}
-                    className="w-[60%] py-3 text-[#6163f1] border-2 border-[#6163f1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
-                  >
-                    Start Over
-                  </button>
                   <p className="text-[1.1rem] text-black font-medium">
                     Three steps that take less than a minute
                   </p>
+                  <button
+                    onClick={() => setActiveStep(0)}
+                    className="w-[50%] py-3 text-[#a1a1a1] border-2 border-[#a1a1a1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
+                  >
+                    Start Over
+                  </button>
                 </div>
               </div>
             )}
@@ -236,15 +236,15 @@ export default function MultiStep() {
                   >
                     Next Step
                   </button>
-                  <button
-                    onClick={() => setActiveStep(0)}
-                    className="w-[60%] py-3 text-[#6163f1] border-2 border-[#6163f1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
-                  >
-                    Start Over
-                  </button>
                   <p className="text-[1.1rem] text-black font-medium">
                     Three steps that take less than a minute
                   </p>
+                  <button
+                    onClick={() => setActiveStep(0)}
+                    className="w-[50%] py-3 text-[#a1a1a1] border-2 border-[#a1a1a1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
+                  >
+                    Start Over
+                  </button>
                 </div>
               </div>
             )}
@@ -335,7 +335,7 @@ export default function MultiStep() {
                   </div>
                   <button
                     onClick={() => setActiveStep(0)}
-                    className="w-full py-3 text-[#6163f1] border-2 border-[#6163f1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
+                    className="w-full py-3 text-[#a1a1a1] border-2 border-[#a1a1a1] font-bold rounded-2xl text-[1.2rem] max-[600px]:w-full"
                   >
                     Start Over
                   </button>
